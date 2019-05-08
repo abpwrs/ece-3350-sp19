@@ -1,0 +1,429 @@
+# t=  0, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=00000000, ALU_OP=00, STAT0000, read_dataxxxxxxxx, br_sel=0, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# t= 15, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=00000000, ALU_OP=00, STAT0000, read_data00000000, br_sel=0, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t= 25, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=00000000, ALU_OP=10, STAT0000, read_data00000000, br_sel=0, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t= 35, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=00000000, ALU_OP=10, STAT0000, read_data18100000, br_sel=0, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t= 45, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=00000000, ALU_OP=10, STAT0000, read_data18100000, br_sel=0, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# t= 55, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=00000000, ALU_OP=00, STAT0000, read_data18100000, br_sel=0, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# fetching
+# t= 75, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=00000000, ALU_OP=10, STAT0000, read_data18100000, br_sel=0, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t= 85, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=18100000, ALU_OP=10, STAT0000, read_data18200001, br_sel=0, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t= 95, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=18100000, ALU_OP=01, STAT0000, read_data18200001, br_sel=0, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# t=105, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=18100000, ALU_OP=01, STAT0001, read_data18200001, br_sel=0, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# t=115, R1=00000007, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=18100000, ALU_OP=01, STAT0001, read_data18200001, br_sel=0, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=125, R1=00000007, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=18100000, ALU_OP=10, STAT0001, read_data18200001, br_sel=0, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=135, R1=00000007, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=18200001, ALU_OP=10, STAT0001, read_data80610002, br_sel=0, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=145, R1=00000007, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=18200001, ALU_OP=01, STAT0001, read_data80610002, br_sel=0, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# t=155, R1=00000007, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=18200001, ALU_OP=01, STAT0000, read_data80610002, br_sel=0, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# t=165, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=18200001, ALU_OP=01, STAT0000, read_data80610002, br_sel=0, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=175, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=18200001, ALU_OP=10, STAT0000, read_data80610002, br_sel=0, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=185, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=80610002, ALU_OP=10, STAT0000, read_data62000008, br_sel=0, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=195, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=80610002, ALU_OP=00, STAT0000, read_data62000008, br_sel=0, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=215, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=80610002, ALU_OP=10, STAT0000, read_data62000008, br_sel=0, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=225, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=80610002, ALU_OP=10, STAT0000, read_data62000008, br_sel=0, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=235, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=62000008, ALU_OP=10, STAT0000, read_data80110004, br_sel=1, pc_write=1, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=245, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=62000008, ALU_OP=10, STAT0000, read_data80620002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# t=255, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=62000008, ALU_OP=00, STAT0000, read_data80620002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# fetching
+# t=275, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=62000008, ALU_OP=10, STAT0000, read_data80620002, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=285, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=80620002, ALU_OP=10, STAT0000, read_data6200000d, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=295, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=80620002, ALU_OP=00, STAT0000, read_data6200000d, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=315, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=80620002, ALU_OP=10, STAT0000, read_data6200000d, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=325, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=80620002, ALU_OP=10, STAT0000, read_data6200000d, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=335, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=6200000d, ALU_OP=10, STAT0000, read_data80220004, br_sel=1, pc_write=1, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=345, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=6200000d, ALU_OP=10, STAT0000, read_data80323001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# t=355, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=6200000d, ALU_OP=00, STAT0000, read_data80323001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# fetching
+# t=375, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=6200000d, ALU_OP=10, STAT0000, read_data80323001, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=385, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=395, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=80323001, ALU_OP=00, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=415, R1=00000007, R2=00000009, R3=00000000, R4=00000000, R5=00000000, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=425, R1=00000007, R2=00000009, R3=00000009, R4=00000000, R5=00000000, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=435, R1=00000007, R2=00000009, R3=00000009, R4=00000000, R5=00000000, IR=4800001b, ALU_OP=10, STAT0000, read_data88550001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# mem
+# t=455, R1=00000007, R2=00000009, R3=00000009, R4=00000000, R5=00000000, IR=4800001b, ALU_OP=00, STAT0000, read_data88550001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# fetching
+# t=475, R1=00000007, R2=00000009, R3=00000009, R4=00000000, R5=00000000, IR=4800001b, ALU_OP=10, STAT0000, read_data88550001, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=485, R1=00000007, R2=00000009, R3=00000009, R4=00000000, R5=00000000, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=495, R1=00000007, R2=00000009, R3=00000009, R4=00000000, R5=00000000, IR=88550001, ALU_OP=01, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=515, R1=00000007, R2=00000009, R3=00000009, R4=00000000, R5=00000000, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=525, R1=00000007, R2=00000009, R3=00000009, R4=00000000, R5=00000001, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=535, R1=00000007, R2=00000009, R3=00000009, R4=00000000, R5=00000001, IR=80615002, ALU_OP=10, STAT0000, read_data6100000d, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=545, R1=00000007, R2=00000009, R3=00000009, R4=00000000, R5=00000001, IR=80615002, ALU_OP=00, STAT0000, read_data6100000d, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=565, R1=00000007, R2=00000009, R3=00000009, R4=00000000, R5=00000001, IR=80615002, ALU_OP=10, STAT0000, read_data6100000d, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=575, R1=00000007, R2=00000009, R3=00000009, R4=00000000, R5=00000001, IR=80615002, ALU_OP=10, STAT0000, read_data6100000d, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=585, R1=00000007, R2=00000009, R3=00000009, R4=00000000, R5=00000001, IR=6100000d, ALU_OP=10, STAT0000, read_data88600001, br_sel=1, pc_write=1, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=595, R1=00000007, R2=00000009, R3=00000009, R4=00000000, R5=00000001, IR=6100000d, ALU_OP=10, STAT0000, read_data80323001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# t=605, R1=00000007, R2=00000009, R3=00000009, R4=00000000, R5=00000001, IR=6100000d, ALU_OP=00, STAT0000, read_data80323001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# fetching
+# t=625, R1=00000007, R2=00000009, R3=00000009, R4=00000000, R5=00000001, IR=6100000d, ALU_OP=10, STAT0000, read_data80323001, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=635, R1=00000007, R2=00000009, R3=00000009, R4=00000000, R5=00000001, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=645, R1=00000007, R2=00000009, R3=00000009, R4=00000000, R5=00000001, IR=80323001, ALU_OP=00, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=665, R1=00000007, R2=00000009, R3=00000009, R4=00000000, R5=00000001, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=675, R1=00000007, R2=00000009, R3=00000012, R4=00000000, R5=00000001, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=685, R1=00000007, R2=00000009, R3=00000012, R4=00000000, R5=00000001, IR=4800001b, ALU_OP=10, STAT0000, read_data88550001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# mem
+# t=705, R1=00000007, R2=00000009, R3=00000012, R4=00000000, R5=00000001, IR=4800001b, ALU_OP=00, STAT0000, read_data88550001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# fetching
+# t=725, R1=00000007, R2=00000009, R3=00000012, R4=00000000, R5=00000001, IR=4800001b, ALU_OP=10, STAT0000, read_data88550001, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=735, R1=00000007, R2=00000009, R3=00000012, R4=00000000, R5=00000001, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=745, R1=00000007, R2=00000009, R3=00000012, R4=00000000, R5=00000001, IR=88550001, ALU_OP=01, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=765, R1=00000007, R2=00000009, R3=00000012, R4=00000000, R5=00000001, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=775, R1=00000007, R2=00000009, R3=00000012, R4=00000000, R5=00000002, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=785, R1=00000007, R2=00000009, R3=00000012, R4=00000000, R5=00000002, IR=80615002, ALU_OP=10, STAT0000, read_data6100000d, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=795, R1=00000007, R2=00000009, R3=00000012, R4=00000000, R5=00000002, IR=80615002, ALU_OP=00, STAT0000, read_data6100000d, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=815, R1=00000007, R2=00000009, R3=00000012, R4=00000000, R5=00000002, IR=80615002, ALU_OP=10, STAT0000, read_data6100000d, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=825, R1=00000007, R2=00000009, R3=00000012, R4=00000000, R5=00000002, IR=80615002, ALU_OP=10, STAT0000, read_data6100000d, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=835, R1=00000007, R2=00000009, R3=00000012, R4=00000000, R5=00000002, IR=6100000d, ALU_OP=10, STAT0000, read_data88600001, br_sel=1, pc_write=1, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=845, R1=00000007, R2=00000009, R3=00000012, R4=00000000, R5=00000002, IR=6100000d, ALU_OP=10, STAT0000, read_data80323001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# t=855, R1=00000007, R2=00000009, R3=00000012, R4=00000000, R5=00000002, IR=6100000d, ALU_OP=00, STAT0000, read_data80323001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# fetching
+# t=875, R1=00000007, R2=00000009, R3=00000012, R4=00000000, R5=00000002, IR=6100000d, ALU_OP=10, STAT0000, read_data80323001, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=885, R1=00000007, R2=00000009, R3=00000012, R4=00000000, R5=00000002, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=895, R1=00000007, R2=00000009, R3=00000012, R4=00000000, R5=00000002, IR=80323001, ALU_OP=00, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=915, R1=00000007, R2=00000009, R3=00000012, R4=00000000, R5=00000002, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=925, R1=00000007, R2=00000009, R3=0000001b, R4=00000000, R5=00000002, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=935, R1=00000007, R2=00000009, R3=0000001b, R4=00000000, R5=00000002, IR=4800001b, ALU_OP=10, STAT0000, read_data88550001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# mem
+# t=955, R1=00000007, R2=00000009, R3=0000001b, R4=00000000, R5=00000002, IR=4800001b, ALU_OP=00, STAT0000, read_data88550001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# fetching
+# t=975, R1=00000007, R2=00000009, R3=0000001b, R4=00000000, R5=00000002, IR=4800001b, ALU_OP=10, STAT0000, read_data88550001, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=985, R1=00000007, R2=00000009, R3=0000001b, R4=00000000, R5=00000002, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=995, R1=00000007, R2=00000009, R3=0000001b, R4=00000000, R5=00000002, IR=88550001, ALU_OP=01, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=1015, R1=00000007, R2=00000009, R3=0000001b, R4=00000000, R5=00000002, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=1025, R1=00000007, R2=00000009, R3=0000001b, R4=00000000, R5=00000003, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=1035, R1=00000007, R2=00000009, R3=0000001b, R4=00000000, R5=00000003, IR=80615002, ALU_OP=10, STAT0000, read_data6100000d, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=1045, R1=00000007, R2=00000009, R3=0000001b, R4=00000000, R5=00000003, IR=80615002, ALU_OP=00, STAT0000, read_data6100000d, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=1065, R1=00000007, R2=00000009, R3=0000001b, R4=00000000, R5=00000003, IR=80615002, ALU_OP=10, STAT0000, read_data6100000d, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=1075, R1=00000007, R2=00000009, R3=0000001b, R4=00000000, R5=00000003, IR=80615002, ALU_OP=10, STAT0000, read_data6100000d, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=1085, R1=00000007, R2=00000009, R3=0000001b, R4=00000000, R5=00000003, IR=6100000d, ALU_OP=10, STAT0000, read_data88600001, br_sel=1, pc_write=1, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=1095, R1=00000007, R2=00000009, R3=0000001b, R4=00000000, R5=00000003, IR=6100000d, ALU_OP=10, STAT0000, read_data80323001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# t=1105, R1=00000007, R2=00000009, R3=0000001b, R4=00000000, R5=00000003, IR=6100000d, ALU_OP=00, STAT0000, read_data80323001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# fetching
+# t=1125, R1=00000007, R2=00000009, R3=0000001b, R4=00000000, R5=00000003, IR=6100000d, ALU_OP=10, STAT0000, read_data80323001, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=1135, R1=00000007, R2=00000009, R3=0000001b, R4=00000000, R5=00000003, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=1145, R1=00000007, R2=00000009, R3=0000001b, R4=00000000, R5=00000003, IR=80323001, ALU_OP=00, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=1165, R1=00000007, R2=00000009, R3=0000001b, R4=00000000, R5=00000003, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=1175, R1=00000007, R2=00000009, R3=00000024, R4=00000000, R5=00000003, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=1185, R1=00000007, R2=00000009, R3=00000024, R4=00000000, R5=00000003, IR=4800001b, ALU_OP=10, STAT0000, read_data88550001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# mem
+# t=1205, R1=00000007, R2=00000009, R3=00000024, R4=00000000, R5=00000003, IR=4800001b, ALU_OP=00, STAT0000, read_data88550001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# fetching
+# t=1225, R1=00000007, R2=00000009, R3=00000024, R4=00000000, R5=00000003, IR=4800001b, ALU_OP=10, STAT0000, read_data88550001, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=1235, R1=00000007, R2=00000009, R3=00000024, R4=00000000, R5=00000003, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=1245, R1=00000007, R2=00000009, R3=00000024, R4=00000000, R5=00000003, IR=88550001, ALU_OP=01, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=1265, R1=00000007, R2=00000009, R3=00000024, R4=00000000, R5=00000003, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=1275, R1=00000007, R2=00000009, R3=00000024, R4=00000000, R5=00000004, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=1285, R1=00000007, R2=00000009, R3=00000024, R4=00000000, R5=00000004, IR=80615002, ALU_OP=10, STAT0000, read_data6100000d, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=1295, R1=00000007, R2=00000009, R3=00000024, R4=00000000, R5=00000004, IR=80615002, ALU_OP=00, STAT0000, read_data6100000d, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=1315, R1=00000007, R2=00000009, R3=00000024, R4=00000000, R5=00000004, IR=80615002, ALU_OP=10, STAT0000, read_data6100000d, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=1325, R1=00000007, R2=00000009, R3=00000024, R4=00000000, R5=00000004, IR=80615002, ALU_OP=10, STAT0000, read_data6100000d, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=1335, R1=00000007, R2=00000009, R3=00000024, R4=00000000, R5=00000004, IR=6100000d, ALU_OP=10, STAT0000, read_data88600001, br_sel=1, pc_write=1, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=1345, R1=00000007, R2=00000009, R3=00000024, R4=00000000, R5=00000004, IR=6100000d, ALU_OP=10, STAT0000, read_data80323001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# t=1355, R1=00000007, R2=00000009, R3=00000024, R4=00000000, R5=00000004, IR=6100000d, ALU_OP=00, STAT0000, read_data80323001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# fetching
+# t=1375, R1=00000007, R2=00000009, R3=00000024, R4=00000000, R5=00000004, IR=6100000d, ALU_OP=10, STAT0000, read_data80323001, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=1385, R1=00000007, R2=00000009, R3=00000024, R4=00000000, R5=00000004, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=1395, R1=00000007, R2=00000009, R3=00000024, R4=00000000, R5=00000004, IR=80323001, ALU_OP=00, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=1415, R1=00000007, R2=00000009, R3=00000024, R4=00000000, R5=00000004, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=1425, R1=00000007, R2=00000009, R3=0000002d, R4=00000000, R5=00000004, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=1435, R1=00000007, R2=00000009, R3=0000002d, R4=00000000, R5=00000004, IR=4800001b, ALU_OP=10, STAT0000, read_data88550001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# mem
+# t=1455, R1=00000007, R2=00000009, R3=0000002d, R4=00000000, R5=00000004, IR=4800001b, ALU_OP=00, STAT0000, read_data88550001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# fetching
+# t=1475, R1=00000007, R2=00000009, R3=0000002d, R4=00000000, R5=00000004, IR=4800001b, ALU_OP=10, STAT0000, read_data88550001, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=1485, R1=00000007, R2=00000009, R3=0000002d, R4=00000000, R5=00000004, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=1495, R1=00000007, R2=00000009, R3=0000002d, R4=00000000, R5=00000004, IR=88550001, ALU_OP=01, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=1515, R1=00000007, R2=00000009, R3=0000002d, R4=00000000, R5=00000004, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=1525, R1=00000007, R2=00000009, R3=0000002d, R4=00000000, R5=00000005, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=1535, R1=00000007, R2=00000009, R3=0000002d, R4=00000000, R5=00000005, IR=80615002, ALU_OP=10, STAT0000, read_data6100000d, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=1545, R1=00000007, R2=00000009, R3=0000002d, R4=00000000, R5=00000005, IR=80615002, ALU_OP=00, STAT0000, read_data6100000d, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=1565, R1=00000007, R2=00000009, R3=0000002d, R4=00000000, R5=00000005, IR=80615002, ALU_OP=10, STAT0000, read_data6100000d, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=1575, R1=00000007, R2=00000009, R3=0000002d, R4=00000000, R5=00000005, IR=80615002, ALU_OP=10, STAT0000, read_data6100000d, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=1585, R1=00000007, R2=00000009, R3=0000002d, R4=00000000, R5=00000005, IR=6100000d, ALU_OP=10, STAT0000, read_data88600001, br_sel=1, pc_write=1, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=1595, R1=00000007, R2=00000009, R3=0000002d, R4=00000000, R5=00000005, IR=6100000d, ALU_OP=10, STAT0000, read_data80323001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# t=1605, R1=00000007, R2=00000009, R3=0000002d, R4=00000000, R5=00000005, IR=6100000d, ALU_OP=00, STAT0000, read_data80323001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# fetching
+# t=1625, R1=00000007, R2=00000009, R3=0000002d, R4=00000000, R5=00000005, IR=6100000d, ALU_OP=10, STAT0000, read_data80323001, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=1635, R1=00000007, R2=00000009, R3=0000002d, R4=00000000, R5=00000005, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=1645, R1=00000007, R2=00000009, R3=0000002d, R4=00000000, R5=00000005, IR=80323001, ALU_OP=00, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=1665, R1=00000007, R2=00000009, R3=0000002d, R4=00000000, R5=00000005, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=1675, R1=00000007, R2=00000009, R3=00000036, R4=00000000, R5=00000005, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=1685, R1=00000007, R2=00000009, R3=00000036, R4=00000000, R5=00000005, IR=4800001b, ALU_OP=10, STAT0000, read_data88550001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# mem
+# t=1705, R1=00000007, R2=00000009, R3=00000036, R4=00000000, R5=00000005, IR=4800001b, ALU_OP=00, STAT0000, read_data88550001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# fetching
+# t=1725, R1=00000007, R2=00000009, R3=00000036, R4=00000000, R5=00000005, IR=4800001b, ALU_OP=10, STAT0000, read_data88550001, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=1735, R1=00000007, R2=00000009, R3=00000036, R4=00000000, R5=00000005, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=1745, R1=00000007, R2=00000009, R3=00000036, R4=00000000, R5=00000005, IR=88550001, ALU_OP=01, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=1765, R1=00000007, R2=00000009, R3=00000036, R4=00000000, R5=00000005, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=1775, R1=00000007, R2=00000009, R3=00000036, R4=00000000, R5=00000006, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=1785, R1=00000007, R2=00000009, R3=00000036, R4=00000000, R5=00000006, IR=80615002, ALU_OP=10, STAT0000, read_data6100000d, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=1795, R1=00000007, R2=00000009, R3=00000036, R4=00000000, R5=00000006, IR=80615002, ALU_OP=00, STAT0000, read_data6100000d, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=1815, R1=00000007, R2=00000009, R3=00000036, R4=00000000, R5=00000006, IR=80615002, ALU_OP=10, STAT0000, read_data6100000d, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=1825, R1=00000007, R2=00000009, R3=00000036, R4=00000000, R5=00000006, IR=80615002, ALU_OP=10, STAT0000, read_data6100000d, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=1835, R1=00000007, R2=00000009, R3=00000036, R4=00000000, R5=00000006, IR=6100000d, ALU_OP=10, STAT0000, read_data88600001, br_sel=1, pc_write=1, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=1845, R1=00000007, R2=00000009, R3=00000036, R4=00000000, R5=00000006, IR=6100000d, ALU_OP=10, STAT0000, read_data80323001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# t=1855, R1=00000007, R2=00000009, R3=00000036, R4=00000000, R5=00000006, IR=6100000d, ALU_OP=00, STAT0000, read_data80323001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# fetching
+# t=1875, R1=00000007, R2=00000009, R3=00000036, R4=00000000, R5=00000006, IR=6100000d, ALU_OP=10, STAT0000, read_data80323001, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=1885, R1=00000007, R2=00000009, R3=00000036, R4=00000000, R5=00000006, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=1895, R1=00000007, R2=00000009, R3=00000036, R4=00000000, R5=00000006, IR=80323001, ALU_OP=00, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=1915, R1=00000007, R2=00000009, R3=00000036, R4=00000000, R5=00000006, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=1925, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000006, IR=80323001, ALU_OP=10, STAT0000, read_data4800001b, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=1935, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000006, IR=4800001b, ALU_OP=10, STAT0000, read_data88550001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# mem
+# t=1955, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000006, IR=4800001b, ALU_OP=00, STAT0000, read_data88550001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# fetching
+# t=1975, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000006, IR=4800001b, ALU_OP=10, STAT0000, read_data88550001, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=1985, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000006, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=1995, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000006, IR=88550001, ALU_OP=01, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# t=2015, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000006, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=2025, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=88550001, ALU_OP=10, STAT0000, read_data80615002, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=2035, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=80615002, ALU_OP=10, STAT0000, read_data6100000d, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=2045, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=80615002, ALU_OP=00, STAT0000, read_data6100000d, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# t=2055, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=80615002, ALU_OP=00, STAT0001, read_data6100000d, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# t=2065, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=80615002, ALU_OP=10, STAT0001, read_data6100000d, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=2075, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=80615002, ALU_OP=10, STAT0001, read_data6100000d, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=2085, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=6100000d, ALU_OP=10, STAT0001, read_data88600001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# mem
+# t=2105, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=6100000d, ALU_OP=00, STAT0001, read_data88600001, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# fetching
+# t=2125, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=6100000d, ALU_OP=10, STAT0001, read_data88600001, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=2135, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=88600001, ALU_OP=10, STAT0001, read_data80776002, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=2145, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=88600001, ALU_OP=01, STAT0001, read_data80776002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# t=2155, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=88600001, ALU_OP=01, STAT0000, read_data80776002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# t=2165, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=88600001, ALU_OP=10, STAT0000, read_data80776002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=2175, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=88600001, ALU_OP=10, STAT0000, read_data80776002, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=2185, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=80776002, ALU_OP=10, STAT0000, read_data61000018, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=2195, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=80776002, ALU_OP=00, STAT0000, read_data61000018, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# t=2205, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=80776002, ALU_OP=00, STAT1010, read_data61000018, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# t=2215, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=80776002, ALU_OP=10, STAT1010, read_data61000018, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# fetching
+# t=2225, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=80776002, ALU_OP=10, STAT1010, read_data61000018, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=2235, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=61000018, ALU_OP=10, STAT1010, read_data80330004, br_sel=1, pc_write=1, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=2245, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=61000018, ALU_OP=10, STAT1010, read_data28300003, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# t=2255, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=61000018, ALU_OP=00, STAT1010, read_data28300003, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# fetching
+# t=2275, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=61000018, ALU_OP=10, STAT1010, read_data28300003, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=2285, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=28300003, ALU_OP=10, STAT1010, read_data28400002, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=2295, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=28300003, ALU_OP=01, STAT1010, read_data28400002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# t=2305, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=28300003, ALU_OP=01, STAT0000, read_data28400002, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# writeback
+# fetching
+# t=2325, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=28300003, ALU_OP=10, STAT0000, read_data28400002, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=2335, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=28400002, ALU_OP=10, STAT0000, read_dataf0000000, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# execute
+# t=2345, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=28400002, ALU_OP=01, STAT0000, read_dataf0000000, br_sel=1, pc_write=0, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# mem
+# writeback
+# fetching
+# t=2375, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=28400002, ALU_OP=10, STAT0000, read_dataf0000000, br_sel=1, pc_write=1, pc_sel=0, M[8]xxxxxxxx, M[9]xxxxxxxx
+# decode
+# t=2385, R1=00000007, R2=00000009, R3=0000003f, R4=00000000, R5=00000007, IR=f0000000, ALU_OP=10, STAT0000, read_data88440001, br_sel=1, pc_write=0, pc_sel=1, M[8]xxxxxxxx, M[9]xxxxxxxx
+# Halt.
+#  Note $stop     iowa.uiowa.edusharedengineeringhomeabpwrswindowsdataDesktopcomp-arch-projectp3part3ctrl.v(401)
+#    Time 2390 ns  Iteration 0  Instance sisc_tbuutcontrol
+# Break in Module ctrl at iowa.uiowa.edusharedengineeringhomeabpwrswindowsdataDesktopcomp-arch-projectp3part3ctrl.v line 401

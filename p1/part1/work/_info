@@ -1,0 +1,178 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/modelsim_dlx64_10.7b/examples
+valu
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 ZiLzW2QU3U415V1hR<bh^0
+IC]hH0;QXjmL3RjFzR7Wa@3
+R0
+w1551044052
+8//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/alu.v
+F//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/alu.v
+L0 6
+Z2 OP;L;10.7b;67
+31
+Z3 !s108 1551044056.000000
+!s107 //iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/alu.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/alu.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vctrl
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 26?3n8RSUg1kXmO@T]eb^0
+ILUbe;IM=o>d1YE_2>NR;l3
+R0
+w1551040658
+8//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/ctrl.v
+F//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/ctrl.v
+L0 7
+R2
+31
+R3
+!s107 //iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/ctrl.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/ctrl.v|
+!i113 1
+R4
+R5
+vmux32
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 J7VXJLC31:N<5Km6Cf5]f0
+IB>WTdh`Gba2SSJ<TT2T1F1
+R0
+Z6 w1550246380
+8//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/mux32.v
+F//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/mux32.v
+L0 6
+R2
+31
+Z7 !s108 1551044057.000000
+!s107 //iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/mux32.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/mux32.v|
+!i113 1
+R4
+R5
+vmux4
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 JF=`7SIBT1FPGU?USX7a23
+IR4L>I3]>_FV?:;3<Xogn72
+R0
+R6
+8//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/mux4.v
+F//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/mux4.v
+L0 6
+R2
+31
+R7
+!s107 //iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/mux4.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/mux4.v|
+!i113 1
+R4
+R5
+vrf
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 zTm^Add]I@IWMg0G=6HeM1
+I[Fl[S:anBjh[QTlIdfQ?l1
+R0
+R6
+8//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/rf.v
+F//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/rf.v
+L0 6
+R2
+31
+R7
+!s107 //iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/rf.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/rf.v|
+!i113 1
+R4
+R5
+vsisc
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 G;S<OJdzYA=Gm4AT2L<1^1
+IZjcUA89RfOc5KXVADVD700
+R0
+w1551042238
+8//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/sisc.v
+F//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/sisc.v
+L0 7
+R2
+31
+R7
+!s107 //iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/sisc.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/sisc.v|
+!i113 1
+R4
+R5
+vsisc_tb
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 jQ?cd9SA]gEI5V`5YcCz70
+IH]CjZM<A8C5nAz@1ADP>[3
+R0
+w1551042794
+8//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/sisc_tb_p1.v
+F//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/sisc_tb_p1.v
+L0 6
+R2
+31
+R7
+!s107 //iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/sisc_tb_p1.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/sisc_tb_p1.v|
+!i113 1
+R4
+R5
+vstatreg
+R1
+r1
+!s85 0
+31
+!i10b 1
+!s100 JfTQO;RhP[aKTeQF0kAhC1
+IIM[iN0PaL@?>jCoGgS3@a2
+R0
+R6
+8//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/statreg.v
+F//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/statreg.v
+L0 6
+R2
+31
+R7
+!s107 //iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/statreg.v|
+!s90 -reportprogress|300|-work|work|//iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/part1/statreg.v|
+!i113 1
+R4
+R5

@@ -1,0 +1,8 @@
+how is the mux16 --> dm working? spliting into 16 bits on each side.
+
+the value of alu_result is an input to the mux16? how does this work if alu_result is 32 bits and mux16 works on 16 bit inputs
+
+What is the difference between LDX & LDA and STX & STA
+
+
+

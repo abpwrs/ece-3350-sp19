@@ -1,0 +1,38 @@
+// sort instructions for BUBBLE SORT
+
+00000000 // NOOP
+10100000 // LDA R1 M(R0) // use R0 to index list
+
+// BUBBLE:
+88200001 // ADI R2, R0, 1
+88300000 // ADI R3, R0, 0
+
+// LOOP:
+18420000 // LDX R4, M(R2 + 0)
+18520001 // LDX R5, M(R2 + 1)
+80654002 // SUB R6, R5, R4
+4300000F // Branch to SWAP
+
+// INC:
+88220001 // ADI R2, R2, R1
+80612002 // SUB R6, R1, R2
+4100000C // BRA to CHECK
+60000004 // BNE LOOP: --> unconditionally 
+
+// CHECK:
+80603002 // SUB R6, R0, R3
+42000002 // Branch BUBBLE
+F0000000 // HALT
+
+// SWAP:
+28420001 // STX R4, M(R2 + 1)
+28520000 // STX R5, M(R2)
+88220001 // ADI R3, R3, 1
+60000008 // BNE INC --> unconditionally
+//
+
+
+
+
+
+

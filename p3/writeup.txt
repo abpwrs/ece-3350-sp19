@@ -1,0 +1,9 @@
+Computer Architecture (ECE:3350) 
+Project Part #3
+Due: April 14th 2019
+Team Members: Cooper Bell, Tina Liu, Alex Powers
+
+Cooper Bell submitted the simulation files. 
+
+Description:
+We finished the implementation of ctrl.v as a finite state machine and modified the sisc module to instantiate and connect 2 new modules- mux16 and dm (data memory). In addition, we had to make some major alterations to the thirty-two-bit mux, in order to imiplement the SWP functionality. The processesor is now able to execute load and store instructions. We also had to add an addition mux4 to implement the SWP operation. as we had to change the write address of rf between the mem & writeback steps of execution. In this homework we also had to develop a solid understanding of machine instruction, in order to implement both bubble sort and multiplication.

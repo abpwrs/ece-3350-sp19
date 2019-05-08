@@ -1,0 +1,10 @@
+Computer Architecture (ECE:3350) 
+Project Part #1
+Due: Feb 25th 2019
+Team Members: Cooper Bell, Tina Liu, Alex Powers
+
+Description:
+We finished the implementation of ctrl.v as a finite state machine. 
+We implemented the control for R-type instructions and the add immediate instruction.
+sisc.v now connects all of the instantiated modules through control and data signals.
+We ran the test bench and validate the results of both arithmetic instructions and status code generation.

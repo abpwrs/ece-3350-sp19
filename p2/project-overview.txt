@@ -1,0 +1,9 @@
+Computer Architecture (ECE:3350) 
+Project Part #2
+Due: March 25th 2019
+Team Members: Cooper Bell, Tina Liu, Alex Powers
+
+Cooper Bell submitted the simulation files. 
+
+Description:
+We finished the implementation of ctrl.v as a finite state machine and modified the sisc module to instantiate and connect 4 new modules- program counter, branch, instruction register, and instruction memory. We used the imem.data file to ensure Part 2 modifications have not broken the original Part 1 functionality. The control unit now generates the new rb, br, pc, and ir signals while implementing the instruction fetch and branch instructions. We implemented the control for branch execution, program counter, and instruction memory. The sisc.v code now connects all of the instantiated modules through control and data signals. We ran the test bench and read in imem.data to validate the results. 

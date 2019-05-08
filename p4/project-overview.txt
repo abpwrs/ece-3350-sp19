@@ -1,0 +1,9 @@
+Computer Architecture (ECE:3350) 
+Project Part #4
+Due: April 29th 2019
+Team Members: Cooper Bell, Tina Liu, Alex Powers
+
+Description:
+We finished the implementation of LDP, LDR, STP, and STR instructions. These new instructions allow for auto-increment and auto-decrement store and load instructions. We  ensured Part 3 modifications have not broken the Part 1, Part 2, and Part 3 functionalities. We ran the test bench and read in every SISC-supported instruction and addressing mode, modifying the one provided to us on ICON from Part 3) in an instruction memory file called all_instr.data and associated data memory file called all_data.data to validate the results. 
+
+We expanded MUX-16 to have three inputs instead of 2. Now, 00 is the result from the alu, 01 is imm, and 10 is RSA. MM select was expanded to 2 bits as well. For these, new control lines were created/updated. The FSM diagram remained the same from part 3, but the data path diagram was updated to reflect these new changes. Load and store implementations (with auto-increment and auto-decrement) were correct. The new load instruction addressing modes now require two values to be written to the register file during instruction execution, just like the swap instruction. Our final solution correctly executed all previous and new instructions. 

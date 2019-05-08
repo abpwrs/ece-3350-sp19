@@ -1,0 +1,510 @@
+# t=  0, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=00000000, ALU_OP=00, STAT:0000, read_data:xxxxxxxx, br_sel=0, pc_write=0, pc_sel'0
+# t= 15, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=00000000, ALU_OP=00, STAT:0000, read_data:00000000, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t= 25, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=00000000, ALU_OP=00, STAT:0000, read_data:00000000, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t= 35, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=00000000, ALU_OP=00, STAT:0000, read_data:88100001, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t= 45, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=00000000, ALU_OP=00, STAT:0000, read_data:88100001, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t= 65, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=00000000, ALU_OP=10, STAT:0000, read_data:88100001, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t= 75, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=00000000, ALU_OP=00, STAT:0000, read_data:88100001, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t= 85, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=88100001, ALU_OP=00, STAT:0000, read_data:80211001, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t= 95, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=88100001, ALU_OP=01, STAT:0001, read_data:80211001, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# t=105, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=88100001, ALU_OP=01, STAT:0000, read_data:80211001, br_sel=0, pc_write=0, pc_sel'0
+# writeback
+# t=115, R1=00000000, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=88100001, ALU_OP=10, STAT:0000, read_data:80211001, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=125, R1=00000001, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=88100001, ALU_OP=00, STAT:0000, read_data:80211001, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=135, R1=00000001, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=80211001, ALU_OP=00, STAT:0001, read_data:8032200b, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=145, R1=00000001, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=80211001, ALU_OP=00, STAT:0001, read_data:8032200b, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# t=155, R1=00000001, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=80211001, ALU_OP=00, STAT:0000, read_data:8032200b, br_sel=0, pc_write=0, pc_sel'0
+# writeback
+# t=165, R1=00000001, R2=00000000, R3=00000000, R4=00000000, R5=00000000, IR=80211001, ALU_OP=10, STAT:0000, read_data:8032200b, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=175, R1=00000001, R2=00000002, R3=00000000, R4=00000000, R5=00000000, IR=80211001, ALU_OP=00, STAT:0000, read_data:8032200b, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=185, R1=00000001, R2=00000002, R3=00000000, R4=00000000, R5=00000000, IR=8032200b, ALU_OP=00, STAT:0000, read_data:80412002, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=195, R1=00000001, R2=00000002, R3=00000000, R4=00000000, R5=00000000, IR=8032200b, ALU_OP=00, STAT:0000, read_data:80412002, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=215, R1=00000001, R2=00000002, R3=00000000, R4=00000000, R5=00000000, IR=8032200b, ALU_OP=10, STAT:0000, read_data:80412002, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=225, R1=00000001, R2=00000002, R3=00000008, R4=00000000, R5=00000000, IR=8032200b, ALU_OP=00, STAT:0000, read_data:80412002, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=235, R1=00000001, R2=00000002, R3=00000008, R4=00000000, R5=00000000, IR=80412002, ALU_OP=00, STAT:0000, read_data:8044300a, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=245, R1=00000001, R2=00000002, R3=00000008, R4=00000000, R5=00000000, IR=80412002, ALU_OP=00, STAT:0001, read_data:8044300a, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# t=255, R1=00000001, R2=00000002, R3=00000008, R4=00000000, R5=00000000, IR=80412002, ALU_OP=00, STAT:1010, read_data:8044300a, br_sel=0, pc_write=0, pc_sel'0
+# writeback
+# t=265, R1=00000001, R2=00000002, R3=00000008, R4=00000000, R5=00000000, IR=80412002, ALU_OP=10, STAT:1010, read_data:8044300a, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=275, R1=00000001, R2=00000002, R3=00000008, R4=ffffffff, R5=00000000, IR=80412002, ALU_OP=00, STAT:1010, read_data:8044300a, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=285, R1=00000001, R2=00000002, R3=00000008, R4=ffffffff, R5=00000000, IR=8044300a, ALU_OP=00, STAT:1010, read_data:80234007, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=295, R1=00000001, R2=00000002, R3=00000008, R4=ffffffff, R5=00000000, IR=8044300a, ALU_OP=00, STAT:1010, read_data:80234007, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=315, R1=00000001, R2=00000002, R3=00000008, R4=ffffffff, R5=00000000, IR=8044300a, ALU_OP=10, STAT:1010, read_data:80234007, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=325, R1=00000001, R2=00000002, R3=00000008, R4=00ffffff, R5=00000000, IR=8044300a, ALU_OP=00, STAT:1010, read_data:80234007, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=335, R1=00000001, R2=00000002, R3=00000008, R4=00ffffff, R5=00000000, IR=80234007, ALU_OP=00, STAT:1010, read_data:80220004, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=345, R1=00000001, R2=00000002, R3=00000008, R4=00ffffff, R5=00000000, IR=80234007, ALU_OP=00, STAT:1010, read_data:80220004, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=365, R1=00000001, R2=00000002, R3=00000008, R4=00ffffff, R5=00000000, IR=80234007, ALU_OP=10, STAT:1010, read_data:80220004, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=375, R1=00000001, R2=00fffff7, R3=00000008, R4=00ffffff, R5=00000000, IR=80234007, ALU_OP=00, STAT:1010, read_data:80220004, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=385, R1=00000001, R2=00fffff7, R3=00000008, R4=00ffffff, R5=00000000, IR=80220004, ALU_OP=00, STAT:1010, read_data:80421009, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=395, R1=00000001, R2=00fffff7, R3=00000008, R4=00ffffff, R5=00000000, IR=80220004, ALU_OP=00, STAT:1010, read_data:80421009, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=415, R1=00000001, R2=00fffff7, R3=00000008, R4=00ffffff, R5=00000000, IR=80220004, ALU_OP=10, STAT:1010, read_data:80421009, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=425, R1=00000001, R2=ff000008, R3=00000008, R4=00ffffff, R5=00000000, IR=80220004, ALU_OP=00, STAT:1010, read_data:80421009, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=435, R1=00000001, R2=ff000008, R3=00000008, R4=00ffffff, R5=00000000, IR=80421009, ALU_OP=00, STAT:1010, read_data:80524005, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=445, R1=00000001, R2=ff000008, R3=00000008, R4=00ffffff, R5=00000000, IR=80421009, ALU_OP=00, STAT:1010, read_data:80524005, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=465, R1=00000001, R2=ff000008, R3=00000008, R4=00ffffff, R5=00000000, IR=80421009, ALU_OP=10, STAT:1010, read_data:80524005, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=475, R1=00000001, R2=ff000008, R3=00000008, R4=fe000011, R5=00000000, IR=80421009, ALU_OP=00, STAT:1010, read_data:80524005, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=485, R1=00000001, R2=ff000008, R3=00000008, R4=fe000011, R5=00000000, IR=80524005, ALU_OP=00, STAT:1010, read_data:80324006, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=495, R1=00000001, R2=ff000008, R3=00000008, R4=fe000011, R5=00000000, IR=80524005, ALU_OP=00, STAT:1010, read_data:80324006, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=515, R1=00000001, R2=ff000008, R3=00000008, R4=fe000011, R5=00000000, IR=80524005, ALU_OP=10, STAT:1010, read_data:80324006, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=525, R1=00000001, R2=ff000008, R3=00000008, R4=fe000011, R5=ff000019, IR=80524005, ALU_OP=00, STAT:1010, read_data:80324006, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=535, R1=00000001, R2=ff000008, R3=00000008, R4=fe000011, R5=ff000019, IR=80324006, ALU_OP=00, STAT:1010, read_data:00000000, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=545, R1=00000001, R2=ff000008, R3=00000008, R4=fe000011, R5=ff000019, IR=80324006, ALU_OP=00, STAT:1010, read_data:00000000, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=565, R1=00000001, R2=ff000008, R3=00000008, R4=fe000011, R5=ff000019, IR=80324006, ALU_OP=10, STAT:1010, read_data:00000000, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=575, R1=00000001, R2=ff000008, R3=fe000000, R4=fe000011, R5=ff000019, IR=80324006, ALU_OP=00, STAT:1010, read_data:00000000, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=585, R1=00000001, R2=ff000008, R3=fe000000, R4=fe000011, R5=ff000019, IR=00000000, ALU_OP=00, STAT:1010, read_data:88100001, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=595, R1=00000001, R2=ff000008, R3=fe000000, R4=fe000011, R5=ff000019, IR=00000000, ALU_OP=00, STAT:1010, read_data:88100001, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=615, R1=00000001, R2=ff000008, R3=fe000000, R4=fe000011, R5=ff000019, IR=00000000, ALU_OP=10, STAT:1010, read_data:88100001, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=625, R1=00000001, R2=ff000008, R3=fe000000, R4=fe000011, R5=ff000019, IR=00000000, ALU_OP=00, STAT:1010, read_data:88100001, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=635, R1=00000001, R2=ff000008, R3=fe000000, R4=fe000011, R5=ff000019, IR=88100001, ALU_OP=00, STAT:1010, read_data:80211002, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=645, R1=00000001, R2=ff000008, R3=fe000000, R4=fe000011, R5=ff000019, IR=88100001, ALU_OP=01, STAT:0001, read_data:80211002, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# t=655, R1=00000001, R2=ff000008, R3=fe000000, R4=fe000011, R5=ff000019, IR=88100001, ALU_OP=01, STAT:0000, read_data:80211002, br_sel=0, pc_write=0, pc_sel'0
+# writeback
+# t=665, R1=00000001, R2=ff000008, R3=fe000000, R4=fe000011, R5=ff000019, IR=88100001, ALU_OP=10, STAT:0000, read_data:80211002, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=675, R1=00000001, R2=ff000008, R3=fe000000, R4=fe000011, R5=ff000019, IR=88100001, ALU_OP=00, STAT:0000, read_data:80211002, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=685, R1=00000001, R2=ff000008, R3=fe000000, R4=fe000011, R5=ff000019, IR=80211002, ALU_OP=00, STAT:0001, read_data:80201002, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=695, R1=00000001, R2=ff000008, R3=fe000000, R4=fe000011, R5=ff000019, IR=80211002, ALU_OP=00, STAT:0001, read_data:80201002, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=715, R1=00000001, R2=ff000008, R3=fe000000, R4=fe000011, R5=ff000019, IR=80211002, ALU_OP=10, STAT:0001, read_data:80201002, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=725, R1=00000001, R2=00000000, R3=fe000000, R4=fe000011, R5=ff000019, IR=80211002, ALU_OP=00, STAT:0001, read_data:80201002, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=735, R1=00000001, R2=00000000, R3=fe000000, R4=fe000011, R5=ff000019, IR=80201002, ALU_OP=00, STAT:0001, read_data:80311008, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=745, R1=00000001, R2=00000000, R3=fe000000, R4=fe000011, R5=ff000019, IR=80201002, ALU_OP=00, STAT:0001, read_data:80311008, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# t=755, R1=00000001, R2=00000000, R3=fe000000, R4=fe000011, R5=ff000019, IR=80201002, ALU_OP=00, STAT:1010, read_data:80311008, br_sel=0, pc_write=0, pc_sel'0
+# writeback
+# t=765, R1=00000001, R2=00000000, R3=fe000000, R4=fe000011, R5=ff000019, IR=80201002, ALU_OP=10, STAT:1010, read_data:80311008, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=775, R1=00000001, R2=ffffffff, R3=fe000000, R4=fe000011, R5=ff000019, IR=80201002, ALU_OP=00, STAT:1010, read_data:80311008, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=785, R1=00000001, R2=ffffffff, R3=fe000000, R4=fe000011, R5=ff000019, IR=80311008, ALU_OP=00, STAT:1010, read_data:80423001, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=795, R1=00000001, R2=ffffffff, R3=fe000000, R4=fe000011, R5=ff000019, IR=80311008, ALU_OP=00, STAT:1010, read_data:80423001, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=815, R1=00000001, R2=ffffffff, R3=fe000000, R4=fe000011, R5=ff000019, IR=80311008, ALU_OP=10, STAT:1010, read_data:80423001, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=825, R1=00000001, R2=ffffffff, R3=80000000, R4=fe000011, R5=ff000019, IR=80311008, ALU_OP=00, STAT:1010, read_data:80423001, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=835, R1=00000001, R2=ffffffff, R3=80000000, R4=fe000011, R5=ff000019, IR=80423001, ALU_OP=00, STAT:1010, read_data:00000000, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=845, R1=00000001, R2=ffffffff, R3=80000000, R4=fe000011, R5=ff000019, IR=80423001, ALU_OP=00, STAT:0000, read_data:00000000, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# t=855, R1=00000001, R2=ffffffff, R3=80000000, R4=fe000011, R5=ff000019, IR=80423001, ALU_OP=00, STAT:1100, read_data:00000000, br_sel=0, pc_write=0, pc_sel'0
+# writeback
+# t=865, R1=00000001, R2=ffffffff, R3=80000000, R4=fe000011, R5=ff000019, IR=80423001, ALU_OP=10, STAT:1100, read_data:00000000, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=875, R1=00000001, R2=ffffffff, R3=80000000, R4=7fffffff, R5=ff000019, IR=80423001, ALU_OP=00, STAT:1100, read_data:00000000, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=885, R1=00000001, R2=ffffffff, R3=80000000, R4=7fffffff, R5=ff000019, IR=00000000, ALU_OP=00, STAT:1100, read_data:80400001, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=895, R1=00000001, R2=ffffffff, R3=80000000, R4=7fffffff, R5=ff000019, IR=00000000, ALU_OP=00, STAT:1100, read_data:80400001, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=915, R1=00000001, R2=ffffffff, R3=80000000, R4=7fffffff, R5=ff000019, IR=00000000, ALU_OP=10, STAT:1100, read_data:80400001, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=925, R1=00000001, R2=ffffffff, R3=80000000, R4=7fffffff, R5=ff000019, IR=00000000, ALU_OP=00, STAT:1100, read_data:80400001, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=935, R1=00000001, R2=ffffffff, R3=80000000, R4=7fffffff, R5=ff000019, IR=80400001, ALU_OP=00, STAT:1100, read_data:6100001d, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=945, R1=00000001, R2=ffffffff, R3=80000000, R4=7fffffff, R5=ff000019, IR=80400001, ALU_OP=00, STAT:0001, read_data:6100001d, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=965, R1=00000001, R2=ffffffff, R3=80000000, R4=7fffffff, R5=ff000019, IR=80400001, ALU_OP=10, STAT:0001, read_data:6100001d, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=975, R1=00000001, R2=ffffffff, R3=80000000, R4=00000000, R5=ff000019, IR=80400001, ALU_OP=00, STAT:0001, read_data:6100001d, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=985, R1=00000001, R2=ffffffff, R3=80000000, R4=00000000, R5=ff000019, IR=6100001d, ALU_OP=00, STAT:0001, read_data:88100001, br_sel=1, pc_write=0, pc_sel'0
+# execute
+# mem
+# writeback
+# t=1015, R1=00000001, R2=ffffffff, R3=80000000, R4=00000000, R5=ff000019, IR=6100001d, ALU_OP=10, STAT:0001, read_data:88100001, br_sel=1, pc_write=0, pc_sel'0
+# fetching
+# t=1025, R1=00000001, R2=ffffffff, R3=80000000, R4=00000000, R5=ff000019, IR=6100001d, ALU_OP=00, STAT:0001, read_data:88100001, br_sel=1, pc_write=1, pc_sel'0
+# decode
+# t=1035, R1=00000001, R2=ffffffff, R3=80000000, R4=00000000, R5=ff000019, IR=88100001, ALU_OP=00, STAT:0001, read_data:88200004, br_sel=1, pc_write=0, pc_sel'1
+# execute
+# t=1045, R1=00000001, R2=ffffffff, R3=80000000, R4=00000000, R5=ff000019, IR=88100001, ALU_OP=01, STAT:0001, read_data:88200004, br_sel=1, pc_write=0, pc_sel'0
+# mem
+# t=1055, R1=00000001, R2=ffffffff, R3=80000000, R4=00000000, R5=ff000019, IR=88100001, ALU_OP=01, STAT:0000, read_data:88200004, br_sel=1, pc_write=0, pc_sel'0
+# writeback
+# t=1065, R1=00000001, R2=ffffffff, R3=80000000, R4=00000000, R5=ff000019, IR=88100001, ALU_OP=10, STAT:0000, read_data:88200004, br_sel=1, pc_write=0, pc_sel'0
+# fetching
+# t=1075, R1=00000001, R2=ffffffff, R3=80000000, R4=00000000, R5=ff000019, IR=88100001, ALU_OP=00, STAT:0000, read_data:88200004, br_sel=1, pc_write=1, pc_sel'0
+# decode
+# t=1085, R1=00000001, R2=ffffffff, R3=80000000, R4=00000000, R5=ff000019, IR=88200004, ALU_OP=00, STAT:0001, read_data:8822ffff, br_sel=1, pc_write=0, pc_sel'1
+# execute
+# t=1095, R1=00000001, R2=ffffffff, R3=80000000, R4=00000000, R5=ff000019, IR=88200004, ALU_OP=01, STAT:0001, read_data:8822ffff, br_sel=1, pc_write=0, pc_sel'0
+# mem
+# t=1105, R1=00000001, R2=ffffffff, R3=80000000, R4=00000000, R5=ff000019, IR=88200004, ALU_OP=01, STAT:0000, read_data:8822ffff, br_sel=1, pc_write=0, pc_sel'0
+# writeback
+# t=1115, R1=00000001, R2=ffffffff, R3=80000000, R4=00000000, R5=ff000019, IR=88200004, ALU_OP=10, STAT:0000, read_data:8822ffff, br_sel=1, pc_write=0, pc_sel'0
+# fetching
+# t=1125, R1=00000001, R2=00000004, R3=80000000, R4=00000000, R5=ff000019, IR=88200004, ALU_OP=00, STAT:0000, read_data:8822ffff, br_sel=1, pc_write=1, pc_sel'0
+# decode
+# t=1135, R1=00000001, R2=00000004, R3=80000000, R4=00000000, R5=ff000019, IR=8822ffff, ALU_OP=00, STAT:0000, read_data:51000005, br_sel=1, pc_write=0, pc_sel'1
+# execute
+# t=1145, R1=00000001, R2=00000004, R3=80000000, R4=00000000, R5=ff000019, IR=8822ffff, ALU_OP=01, STAT:0000, read_data:51000005, br_sel=1, pc_write=0, pc_sel'0
+# mem
+# t=1155, R1=00000001, R2=00000004, R3=80000000, R4=00000000, R5=ff000019, IR=8822ffff, ALU_OP=01, STAT:1000, read_data:51000005, br_sel=1, pc_write=0, pc_sel'0
+# writeback
+# t=1165, R1=00000001, R2=00000004, R3=80000000, R4=00000000, R5=ff000019, IR=8822ffff, ALU_OP=10, STAT:1000, read_data:51000005, br_sel=1, pc_write=0, pc_sel'0
+# fetching
+# t=1175, R1=00000001, R2=00000003, R3=80000000, R4=00000000, R5=ff000019, IR=8822ffff, ALU_OP=00, STAT:1000, read_data:51000005, br_sel=1, pc_write=1, pc_sel'0
+# decode
+# t=1185, R1=00000001, R2=00000003, R3=80000000, R4=00000000, R5=ff000019, IR=51000005, ALU_OP=00, STAT:1000, read_data:88320000, br_sel=0, pc_write=0, pc_sel'0
+# execute
+# mem
+# writeback
+# t=1215, R1=00000001, R2=00000003, R3=80000000, R4=00000000, R5=ff000019, IR=51000005, ALU_OP=10, STAT:1000, read_data:88320000, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=1225, R1=00000001, R2=00000003, R3=80000000, R4=00000000, R5=ff000019, IR=51000005, ALU_OP=00, STAT:1000, read_data:88320000, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=1235, R1=00000001, R2=00000003, R3=80000000, R4=00000000, R5=ff000019, IR=88320000, ALU_OP=00, STAT:1000, read_data:88440001, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=1245, R1=00000001, R2=00000003, R3=80000000, R4=00000000, R5=ff000019, IR=88320000, ALU_OP=01, STAT:1000, read_data:88440001, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# t=1255, R1=00000001, R2=00000003, R3=80000000, R4=00000000, R5=ff000019, IR=88320000, ALU_OP=01, STAT:0000, read_data:88440001, br_sel=0, pc_write=0, pc_sel'0
+# writeback
+# t=1265, R1=00000001, R2=00000003, R3=80000000, R4=00000000, R5=ff000019, IR=88320000, ALU_OP=10, STAT:0000, read_data:88440001, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=1275, R1=00000001, R2=00000003, R3=00000003, R4=00000000, R5=ff000019, IR=88320000, ALU_OP=00, STAT:0000, read_data:88440001, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=1285, R1=00000001, R2=00000003, R3=00000003, R4=00000000, R5=ff000019, IR=88440001, ALU_OP=00, STAT:0000, read_data:80331002, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=1295, R1=00000001, R2=00000003, R3=00000003, R4=00000000, R5=ff000019, IR=88440001, ALU_OP=01, STAT:0000, read_data:80331002, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=1315, R1=00000001, R2=00000003, R3=00000003, R4=00000000, R5=ff000019, IR=88440001, ALU_OP=10, STAT:0000, read_data:80331002, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=1325, R1=00000001, R2=00000003, R3=00000003, R4=00000001, R5=ff000019, IR=88440001, ALU_OP=00, STAT:0000, read_data:80331002, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=1335, R1=00000001, R2=00000003, R3=00000003, R4=00000001, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0001, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=1345, R1=00000001, R2=00000003, R3=00000003, R4=00000001, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0000, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=1365, R1=00000001, R2=00000003, R3=00000003, R4=00000001, R5=ff000019, IR=80331002, ALU_OP=10, STAT:0000, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=1375, R1=00000001, R2=00000003, R3=00000002, R4=00000001, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0000, read_data:7100fffd, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=1385, R1=00000001, R2=00000003, R3=00000002, R4=00000001, R5=ff000019, IR=7100fffd, ALU_OP=00, STAT:0000, read_data:60000016, br_sel=0, pc_write=1, pc_sel'1
+# execute
+# t=1395, R1=00000001, R2=00000003, R3=00000002, R4=00000001, R5=ff000019, IR=7100fffd, ALU_OP=00, STAT:0000, read_data:88440001, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=1415, R1=00000001, R2=00000003, R3=00000002, R4=00000001, R5=ff000019, IR=7100fffd, ALU_OP=10, STAT:0000, read_data:88440001, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=1425, R1=00000001, R2=00000003, R3=00000002, R4=00000001, R5=ff000019, IR=7100fffd, ALU_OP=00, STAT:0000, read_data:88440001, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=1435, R1=00000001, R2=00000003, R3=00000002, R4=00000001, R5=ff000019, IR=88440001, ALU_OP=00, STAT:0000, read_data:80331002, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=1445, R1=00000001, R2=00000003, R3=00000002, R4=00000001, R5=ff000019, IR=88440001, ALU_OP=01, STAT:0001, read_data:80331002, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# t=1455, R1=00000001, R2=00000003, R3=00000002, R4=00000001, R5=ff000019, IR=88440001, ALU_OP=01, STAT:0000, read_data:80331002, br_sel=0, pc_write=0, pc_sel'0
+# writeback
+# t=1465, R1=00000001, R2=00000003, R3=00000002, R4=00000001, R5=ff000019, IR=88440001, ALU_OP=10, STAT:0000, read_data:80331002, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=1475, R1=00000001, R2=00000003, R3=00000002, R4=00000002, R5=ff000019, IR=88440001, ALU_OP=00, STAT:0000, read_data:80331002, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=1485, R1=00000001, R2=00000003, R3=00000002, R4=00000002, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0000, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=1495, R1=00000001, R2=00000003, R3=00000002, R4=00000002, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0000, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=1515, R1=00000001, R2=00000003, R3=00000002, R4=00000002, R5=ff000019, IR=80331002, ALU_OP=10, STAT:0000, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=1525, R1=00000001, R2=00000003, R3=00000001, R4=00000002, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0000, read_data:7100fffd, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=1535, R1=00000001, R2=00000003, R3=00000001, R4=00000002, R5=ff000019, IR=7100fffd, ALU_OP=00, STAT:0000, read_data:60000016, br_sel=0, pc_write=1, pc_sel'1
+# execute
+# t=1545, R1=00000001, R2=00000003, R3=00000001, R4=00000002, R5=ff000019, IR=7100fffd, ALU_OP=00, STAT:0000, read_data:88440001, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=1565, R1=00000001, R2=00000003, R3=00000001, R4=00000002, R5=ff000019, IR=7100fffd, ALU_OP=10, STAT:0000, read_data:88440001, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=1575, R1=00000001, R2=00000003, R3=00000001, R4=00000002, R5=ff000019, IR=7100fffd, ALU_OP=00, STAT:0000, read_data:88440001, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=1585, R1=00000001, R2=00000003, R3=00000001, R4=00000002, R5=ff000019, IR=88440001, ALU_OP=00, STAT:0000, read_data:80331002, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=1595, R1=00000001, R2=00000003, R3=00000001, R4=00000002, R5=ff000019, IR=88440001, ALU_OP=01, STAT:0001, read_data:80331002, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# t=1605, R1=00000001, R2=00000003, R3=00000001, R4=00000002, R5=ff000019, IR=88440001, ALU_OP=01, STAT:0000, read_data:80331002, br_sel=0, pc_write=0, pc_sel'0
+# writeback
+# t=1615, R1=00000001, R2=00000003, R3=00000001, R4=00000002, R5=ff000019, IR=88440001, ALU_OP=10, STAT:0000, read_data:80331002, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=1625, R1=00000001, R2=00000003, R3=00000001, R4=00000003, R5=ff000019, IR=88440001, ALU_OP=00, STAT:0000, read_data:80331002, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=1635, R1=00000001, R2=00000003, R3=00000001, R4=00000003, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0000, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=1645, R1=00000001, R2=00000003, R3=00000001, R4=00000003, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0000, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# t=1655, R1=00000001, R2=00000003, R3=00000001, R4=00000003, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0001, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'0
+# writeback
+# t=1665, R1=00000001, R2=00000003, R3=00000001, R4=00000003, R5=ff000019, IR=80331002, ALU_OP=10, STAT:0001, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=1675, R1=00000001, R2=00000003, R3=00000000, R4=00000003, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0001, read_data:7100fffd, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=1685, R1=00000001, R2=00000003, R3=00000000, R4=00000003, R5=ff000019, IR=7100fffd, ALU_OP=00, STAT:0001, read_data:60000016, br_sel=0, pc_write=0, pc_sel'0
+# execute
+# mem
+# writeback
+# t=1715, R1=00000001, R2=00000003, R3=00000000, R4=00000003, R5=ff000019, IR=7100fffd, ALU_OP=10, STAT:0001, read_data:60000016, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=1725, R1=00000001, R2=00000003, R3=00000000, R4=00000003, R5=ff000019, IR=7100fffd, ALU_OP=00, STAT:0001, read_data:60000016, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=1735, R1=00000001, R2=00000003, R3=00000000, R4=00000003, R5=ff000019, IR=60000016, ALU_OP=00, STAT:0001, read_data:f0000000, br_sel=1, pc_write=1, pc_sel'1
+# execute
+# t=1745, R1=00000001, R2=00000003, R3=00000000, R4=00000003, R5=ff000019, IR=60000016, ALU_OP=00, STAT:0001, read_data:8822ffff, br_sel=1, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=1765, R1=00000001, R2=00000003, R3=00000000, R4=00000003, R5=ff000019, IR=60000016, ALU_OP=10, STAT:0001, read_data:8822ffff, br_sel=1, pc_write=0, pc_sel'0
+# fetching
+# t=1775, R1=00000001, R2=00000003, R3=00000000, R4=00000003, R5=ff000019, IR=60000016, ALU_OP=00, STAT:0001, read_data:8822ffff, br_sel=1, pc_write=1, pc_sel'0
+# decode
+# t=1785, R1=00000001, R2=00000003, R3=00000000, R4=00000003, R5=ff000019, IR=8822ffff, ALU_OP=00, STAT:0001, read_data:51000005, br_sel=1, pc_write=0, pc_sel'1
+# execute
+# t=1795, R1=00000001, R2=00000003, R3=00000000, R4=00000003, R5=ff000019, IR=8822ffff, ALU_OP=01, STAT:0001, read_data:51000005, br_sel=1, pc_write=0, pc_sel'0
+# mem
+# t=1805, R1=00000001, R2=00000003, R3=00000000, R4=00000003, R5=ff000019, IR=8822ffff, ALU_OP=01, STAT:1000, read_data:51000005, br_sel=1, pc_write=0, pc_sel'0
+# writeback
+# t=1815, R1=00000001, R2=00000003, R3=00000000, R4=00000003, R5=ff000019, IR=8822ffff, ALU_OP=10, STAT:1000, read_data:51000005, br_sel=1, pc_write=0, pc_sel'0
+# fetching
+# t=1825, R1=00000001, R2=00000002, R3=00000000, R4=00000003, R5=ff000019, IR=8822ffff, ALU_OP=00, STAT:1000, read_data:51000005, br_sel=1, pc_write=1, pc_sel'0
+# decode
+# t=1835, R1=00000001, R2=00000002, R3=00000000, R4=00000003, R5=ff000019, IR=51000005, ALU_OP=00, STAT:1000, read_data:88320000, br_sel=0, pc_write=0, pc_sel'0
+# execute
+# mem
+# writeback
+# t=1865, R1=00000001, R2=00000002, R3=00000000, R4=00000003, R5=ff000019, IR=51000005, ALU_OP=10, STAT:1000, read_data:88320000, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=1875, R1=00000001, R2=00000002, R3=00000000, R4=00000003, R5=ff000019, IR=51000005, ALU_OP=00, STAT:1000, read_data:88320000, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=1885, R1=00000001, R2=00000002, R3=00000000, R4=00000003, R5=ff000019, IR=88320000, ALU_OP=00, STAT:1000, read_data:88440001, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=1895, R1=00000001, R2=00000002, R3=00000000, R4=00000003, R5=ff000019, IR=88320000, ALU_OP=01, STAT:1000, read_data:88440001, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# t=1905, R1=00000001, R2=00000002, R3=00000000, R4=00000003, R5=ff000019, IR=88320000, ALU_OP=01, STAT:0000, read_data:88440001, br_sel=0, pc_write=0, pc_sel'0
+# writeback
+# t=1915, R1=00000001, R2=00000002, R3=00000000, R4=00000003, R5=ff000019, IR=88320000, ALU_OP=10, STAT:0000, read_data:88440001, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=1925, R1=00000001, R2=00000002, R3=00000002, R4=00000003, R5=ff000019, IR=88320000, ALU_OP=00, STAT:0000, read_data:88440001, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=1935, R1=00000001, R2=00000002, R3=00000002, R4=00000003, R5=ff000019, IR=88440001, ALU_OP=00, STAT:0000, read_data:80331002, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=1945, R1=00000001, R2=00000002, R3=00000002, R4=00000003, R5=ff000019, IR=88440001, ALU_OP=01, STAT:0000, read_data:80331002, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=1965, R1=00000001, R2=00000002, R3=00000002, R4=00000003, R5=ff000019, IR=88440001, ALU_OP=10, STAT:0000, read_data:80331002, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=1975, R1=00000001, R2=00000002, R3=00000002, R4=00000004, R5=ff000019, IR=88440001, ALU_OP=00, STAT:0000, read_data:80331002, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=1985, R1=00000001, R2=00000002, R3=00000002, R4=00000004, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0000, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=1995, R1=00000001, R2=00000002, R3=00000002, R4=00000004, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0000, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=2015, R1=00000001, R2=00000002, R3=00000002, R4=00000004, R5=ff000019, IR=80331002, ALU_OP=10, STAT:0000, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=2025, R1=00000001, R2=00000002, R3=00000001, R4=00000004, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0000, read_data:7100fffd, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=2035, R1=00000001, R2=00000002, R3=00000001, R4=00000004, R5=ff000019, IR=7100fffd, ALU_OP=00, STAT:0000, read_data:60000016, br_sel=0, pc_write=1, pc_sel'1
+# execute
+# t=2045, R1=00000001, R2=00000002, R3=00000001, R4=00000004, R5=ff000019, IR=7100fffd, ALU_OP=00, STAT:0000, read_data:88440001, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=2065, R1=00000001, R2=00000002, R3=00000001, R4=00000004, R5=ff000019, IR=7100fffd, ALU_OP=10, STAT:0000, read_data:88440001, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=2075, R1=00000001, R2=00000002, R3=00000001, R4=00000004, R5=ff000019, IR=7100fffd, ALU_OP=00, STAT:0000, read_data:88440001, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=2085, R1=00000001, R2=00000002, R3=00000001, R4=00000004, R5=ff000019, IR=88440001, ALU_OP=00, STAT:0000, read_data:80331002, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=2095, R1=00000001, R2=00000002, R3=00000001, R4=00000004, R5=ff000019, IR=88440001, ALU_OP=01, STAT:0001, read_data:80331002, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# t=2105, R1=00000001, R2=00000002, R3=00000001, R4=00000004, R5=ff000019, IR=88440001, ALU_OP=01, STAT:0000, read_data:80331002, br_sel=0, pc_write=0, pc_sel'0
+# writeback
+# t=2115, R1=00000001, R2=00000002, R3=00000001, R4=00000004, R5=ff000019, IR=88440001, ALU_OP=10, STAT:0000, read_data:80331002, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=2125, R1=00000001, R2=00000002, R3=00000001, R4=00000005, R5=ff000019, IR=88440001, ALU_OP=00, STAT:0000, read_data:80331002, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=2135, R1=00000001, R2=00000002, R3=00000001, R4=00000005, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0000, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=2145, R1=00000001, R2=00000002, R3=00000001, R4=00000005, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0000, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# t=2155, R1=00000001, R2=00000002, R3=00000001, R4=00000005, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0001, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'0
+# writeback
+# t=2165, R1=00000001, R2=00000002, R3=00000001, R4=00000005, R5=ff000019, IR=80331002, ALU_OP=10, STAT:0001, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=2175, R1=00000001, R2=00000002, R3=00000000, R4=00000005, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0001, read_data:7100fffd, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=2185, R1=00000001, R2=00000002, R3=00000000, R4=00000005, R5=ff000019, IR=7100fffd, ALU_OP=00, STAT:0001, read_data:60000016, br_sel=0, pc_write=0, pc_sel'0
+# execute
+# mem
+# writeback
+# t=2215, R1=00000001, R2=00000002, R3=00000000, R4=00000005, R5=ff000019, IR=7100fffd, ALU_OP=10, STAT:0001, read_data:60000016, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=2225, R1=00000001, R2=00000002, R3=00000000, R4=00000005, R5=ff000019, IR=7100fffd, ALU_OP=00, STAT:0001, read_data:60000016, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=2235, R1=00000001, R2=00000002, R3=00000000, R4=00000005, R5=ff000019, IR=60000016, ALU_OP=00, STAT:0001, read_data:f0000000, br_sel=1, pc_write=1, pc_sel'1
+# execute
+# t=2245, R1=00000001, R2=00000002, R3=00000000, R4=00000005, R5=ff000019, IR=60000016, ALU_OP=00, STAT:0001, read_data:8822ffff, br_sel=1, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=2265, R1=00000001, R2=00000002, R3=00000000, R4=00000005, R5=ff000019, IR=60000016, ALU_OP=10, STAT:0001, read_data:8822ffff, br_sel=1, pc_write=0, pc_sel'0
+# fetching
+# t=2275, R1=00000001, R2=00000002, R3=00000000, R4=00000005, R5=ff000019, IR=60000016, ALU_OP=00, STAT:0001, read_data:8822ffff, br_sel=1, pc_write=1, pc_sel'0
+# decode
+# t=2285, R1=00000001, R2=00000002, R3=00000000, R4=00000005, R5=ff000019, IR=8822ffff, ALU_OP=00, STAT:0001, read_data:51000005, br_sel=1, pc_write=0, pc_sel'1
+# execute
+# t=2295, R1=00000001, R2=00000002, R3=00000000, R4=00000005, R5=ff000019, IR=8822ffff, ALU_OP=01, STAT:0001, read_data:51000005, br_sel=1, pc_write=0, pc_sel'0
+# mem
+# t=2305, R1=00000001, R2=00000002, R3=00000000, R4=00000005, R5=ff000019, IR=8822ffff, ALU_OP=01, STAT:1000, read_data:51000005, br_sel=1, pc_write=0, pc_sel'0
+# writeback
+# t=2315, R1=00000001, R2=00000002, R3=00000000, R4=00000005, R5=ff000019, IR=8822ffff, ALU_OP=10, STAT:1000, read_data:51000005, br_sel=1, pc_write=0, pc_sel'0
+# fetching
+# t=2325, R1=00000001, R2=00000001, R3=00000000, R4=00000005, R5=ff000019, IR=8822ffff, ALU_OP=00, STAT:1000, read_data:51000005, br_sel=1, pc_write=1, pc_sel'0
+# decode
+# t=2335, R1=00000001, R2=00000001, R3=00000000, R4=00000005, R5=ff000019, IR=51000005, ALU_OP=00, STAT:1000, read_data:88320000, br_sel=0, pc_write=0, pc_sel'0
+# execute
+# mem
+# writeback
+# t=2365, R1=00000001, R2=00000001, R3=00000000, R4=00000005, R5=ff000019, IR=51000005, ALU_OP=10, STAT:1000, read_data:88320000, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=2375, R1=00000001, R2=00000001, R3=00000000, R4=00000005, R5=ff000019, IR=51000005, ALU_OP=00, STAT:1000, read_data:88320000, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=2385, R1=00000001, R2=00000001, R3=00000000, R4=00000005, R5=ff000019, IR=88320000, ALU_OP=00, STAT:1000, read_data:88440001, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=2395, R1=00000001, R2=00000001, R3=00000000, R4=00000005, R5=ff000019, IR=88320000, ALU_OP=01, STAT:1000, read_data:88440001, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# t=2405, R1=00000001, R2=00000001, R3=00000000, R4=00000005, R5=ff000019, IR=88320000, ALU_OP=01, STAT:0000, read_data:88440001, br_sel=0, pc_write=0, pc_sel'0
+# writeback
+# t=2415, R1=00000001, R2=00000001, R3=00000000, R4=00000005, R5=ff000019, IR=88320000, ALU_OP=10, STAT:0000, read_data:88440001, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=2425, R1=00000001, R2=00000001, R3=00000001, R4=00000005, R5=ff000019, IR=88320000, ALU_OP=00, STAT:0000, read_data:88440001, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=2435, R1=00000001, R2=00000001, R3=00000001, R4=00000005, R5=ff000019, IR=88440001, ALU_OP=00, STAT:0000, read_data:80331002, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=2445, R1=00000001, R2=00000001, R3=00000001, R4=00000005, R5=ff000019, IR=88440001, ALU_OP=01, STAT:0000, read_data:80331002, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=2465, R1=00000001, R2=00000001, R3=00000001, R4=00000005, R5=ff000019, IR=88440001, ALU_OP=10, STAT:0000, read_data:80331002, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=2475, R1=00000001, R2=00000001, R3=00000001, R4=00000006, R5=ff000019, IR=88440001, ALU_OP=00, STAT:0000, read_data:80331002, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=2485, R1=00000001, R2=00000001, R3=00000001, R4=00000006, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0000, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'1
+# execute
+# t=2495, R1=00000001, R2=00000001, R3=00000001, R4=00000006, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0000, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# t=2505, R1=00000001, R2=00000001, R3=00000001, R4=00000006, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0001, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'0
+# writeback
+# t=2515, R1=00000001, R2=00000001, R3=00000001, R4=00000006, R5=ff000019, IR=80331002, ALU_OP=10, STAT:0001, read_data:7100fffd, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=2525, R1=00000001, R2=00000001, R3=00000000, R4=00000006, R5=ff000019, IR=80331002, ALU_OP=00, STAT:0001, read_data:7100fffd, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=2535, R1=00000001, R2=00000001, R3=00000000, R4=00000006, R5=ff000019, IR=7100fffd, ALU_OP=00, STAT:0001, read_data:60000016, br_sel=0, pc_write=0, pc_sel'0
+# execute
+# mem
+# writeback
+# t=2565, R1=00000001, R2=00000001, R3=00000000, R4=00000006, R5=ff000019, IR=7100fffd, ALU_OP=10, STAT:0001, read_data:60000016, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=2575, R1=00000001, R2=00000001, R3=00000000, R4=00000006, R5=ff000019, IR=7100fffd, ALU_OP=00, STAT:0001, read_data:60000016, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=2585, R1=00000001, R2=00000001, R3=00000000, R4=00000006, R5=ff000019, IR=60000016, ALU_OP=00, STAT:0001, read_data:f0000000, br_sel=1, pc_write=1, pc_sel'1
+# execute
+# t=2595, R1=00000001, R2=00000001, R3=00000000, R4=00000006, R5=ff000019, IR=60000016, ALU_OP=00, STAT:0001, read_data:8822ffff, br_sel=1, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=2615, R1=00000001, R2=00000001, R3=00000000, R4=00000006, R5=ff000019, IR=60000016, ALU_OP=10, STAT:0001, read_data:8822ffff, br_sel=1, pc_write=0, pc_sel'0
+# fetching
+# t=2625, R1=00000001, R2=00000001, R3=00000000, R4=00000006, R5=ff000019, IR=60000016, ALU_OP=00, STAT:0001, read_data:8822ffff, br_sel=1, pc_write=1, pc_sel'0
+# decode
+# t=2635, R1=00000001, R2=00000001, R3=00000000, R4=00000006, R5=ff000019, IR=8822ffff, ALU_OP=00, STAT:0001, read_data:51000005, br_sel=1, pc_write=0, pc_sel'1
+# execute
+# t=2645, R1=00000001, R2=00000001, R3=00000000, R4=00000006, R5=ff000019, IR=8822ffff, ALU_OP=01, STAT:0001, read_data:51000005, br_sel=1, pc_write=0, pc_sel'0
+# mem
+# t=2655, R1=00000001, R2=00000001, R3=00000000, R4=00000006, R5=ff000019, IR=8822ffff, ALU_OP=01, STAT:1001, read_data:51000005, br_sel=1, pc_write=0, pc_sel'0
+# writeback
+# t=2665, R1=00000001, R2=00000001, R3=00000000, R4=00000006, R5=ff000019, IR=8822ffff, ALU_OP=10, STAT:1001, read_data:51000005, br_sel=1, pc_write=0, pc_sel'0
+# fetching
+# t=2675, R1=00000001, R2=00000000, R3=00000000, R4=00000006, R5=ff000019, IR=8822ffff, ALU_OP=00, STAT:1001, read_data:51000005, br_sel=1, pc_write=1, pc_sel'0
+# decode
+# t=2685, R1=00000001, R2=00000000, R3=00000000, R4=00000006, R5=ff000019, IR=51000005, ALU_OP=00, STAT:1001, read_data:88320000, br_sel=0, pc_write=1, pc_sel'1
+# execute
+# t=2695, R1=00000001, R2=00000000, R3=00000000, R4=00000006, R5=ff000019, IR=51000005, ALU_OP=00, STAT:1001, read_data:f0000000, br_sel=0, pc_write=0, pc_sel'0
+# mem
+# writeback
+# t=2715, R1=00000001, R2=00000000, R3=00000000, R4=00000006, R5=ff000019, IR=51000005, ALU_OP=10, STAT:1001, read_data:f0000000, br_sel=0, pc_write=0, pc_sel'0
+# fetching
+# t=2725, R1=00000001, R2=00000000, R3=00000000, R4=00000006, R5=ff000019, IR=51000005, ALU_OP=00, STAT:1001, read_data:f0000000, br_sel=0, pc_write=1, pc_sel'0
+# decode
+# t=2735, R1=00000001, R2=00000000, R3=00000000, R4=00000006, R5=ff000019, IR=f0000000, ALU_OP=00, STAT:1001, read_data:xxxxxxxx, br_sel=0, pc_write=0, pc_sel'1
+# Halt.
+# ** Note: $stop    : //iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/p2/part2/ctrl.v(264)
+#    Time: 2740 ns  Iteration: 0  Instance: /sisc_tb/uut/control
+# Break in Module ctrl at //iowa.uiowa.edu/shared/engineering/home/abpwrs/windowsdata/Desktop/comp-arch-project/p2/part2/ctrl.v line 264
